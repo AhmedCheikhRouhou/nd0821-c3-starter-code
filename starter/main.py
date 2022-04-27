@@ -101,4 +101,3 @@ async def get_prediction(payload: census_data):
 
     results = {"predict": f"Predicts {preds} for {payload.dict()}"}
     return results
-    
