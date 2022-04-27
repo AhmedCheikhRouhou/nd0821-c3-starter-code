@@ -6,4 +6,12 @@ requests
 fastapi==0.63.0
 uvicorn
 gunicorn
+pytest-cov
+flake8
+black==20.8b1
+ipython==7.22.0
 dvc[s3]
+pydantic
+dill
+Jinja2==3.0
+beautifulsoup4
