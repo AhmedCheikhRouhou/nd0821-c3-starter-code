@@ -4,9 +4,6 @@ from fastapi.testclient import TestClient
 # Import our app from main.py.
 from main import census_app
 
-# Instantiate the testing client with our app.
-# client = TestClient(census_app)
-
 # test Fast API root
 
 
