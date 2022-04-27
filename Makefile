@@ -9,7 +9,7 @@ format:
 	black starter/*.py starter/starter/ml/*.py
 
 lint:
-	flake8 --ignore=E303,E302  --max-line-length=120 starter/*.py starter/starter/ml/*.py
+	flake8 --ignore=E303,E302,E226  --max-line-length=200 starter/*.py starter/starter/ml/*.py
 
 dvc:
 	dvc pull -r storage

@@ -1,12 +1,10 @@
 import pandas as pd
 import numpy as np
-import dill as pickle
 import pytest
 
 # import pdb
 from sklearn.compose import ColumnTransformer
-from .model import one_hot_encode_feature_df, generate_feature_encoding
-
+from .model import generate_feature_encoding
 
 @pytest.fixture
 def data():
@@ -41,4 +39,3 @@ def test_one_generate_feature_encoding(data):
     assert isinstance(
         ct, ColumnTransformer
     ), "generate_feature_encoding returned wrong type!"
-
