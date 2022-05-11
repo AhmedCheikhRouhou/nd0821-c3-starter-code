@@ -1,1 +1,1 @@
-web: pip install uvicorn && uvicorn main:census_app --app-dir starter
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker  main:census_app --app-dir starter
