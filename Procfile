@@ -1,1 +1,1 @@
-web: uvicorn main:census_app --app-dir starter
+web: pip install uvicorn && uvicorn main:census_app --app-dir starter
